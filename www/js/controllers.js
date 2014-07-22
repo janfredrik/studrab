@@ -12,6 +12,10 @@ angular.module('starter.controllers', [])
 
 .controller('StudrabDetailCtrl', function($scope, $stateParams, StudRab) {
   $scope.studrab = StudRab.get($stateParams.studrabId);
+  
+  function openDeviceBrowser(externalLinkToOpen){	 
+      window.open(externalLinkToOpen, '_system', 'location=no');}
+
 })
 
 .controller('InfoCtrl', function($scope, $ionicPopup, $timeout) {  
