@@ -1,12 +1,15 @@
+/*
+  Jan Fredrik Gundersen, Skien - 2014
+  Klassen studrab med medlemsdata.
+  - all returnerer hele arrayen
+  - get returnerer onsket id
+*/
+
 angular.module('starter.services', [])
 
-/**
- * A simple example service that returns some data.
- */
 .factory('StudRab', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
+  // Bedrifter som tilbyr rabatt med adr, txt (hva slags fordel man faar, logo og kategori.
   var studrab = [
     { id: 0, name: '360 grader', adr: 'Jernbanesvingen 6, 2821 Gjøvik', txt: '299,- per mnd for studenter. Alle medlemmer må betale en engangspris for en wellneskey til 1090,-', logo: "img/360.jpg", kat: "trening" },
     { id: 1, name: 'Basic Gym', adr: "Øvre Torvgate 24B, 2815 Gjøvik",txt: '299,- per mnd for studenter.', logo: "img/basic.jpg", kat: "trening"  },
@@ -14,7 +17,7 @@ angular.module('starter.services', [])
     { id: 3, name: 'Toten treningssenter', adr: "Storgata 25, 2815 Gjøvik", txt: "Basismedlemskapet 519,- pr mnd. Alle betaler en klubbkontingent ved oppstart, den er på 990,-. Ønsker studentene å velge medlemskap på Otium Spa, uten tilgang til Toten Treningssenter koster dette 519,- pr mnd. Velges det i medlemskapet og kunne benytte begge steder kommer et tillegg på 150,-", logo: "img/toten.png", kat: "trening" },
       { id: 4, name: 'Big Horn Steakhouse', adr: "Strandgata 15 2815 Gjøvik", txt: "10 % rabatt på alt av mat.", logo: "img/bighorn.jpg", kat: "resturant" },
       { id: 5, name: 'Café Pi', adr: "Strandgata 15 2815 Gjøvik", txt: "10 % rabatt på alt av mat.", logo: "img/cafepi.jpg", kat: "resturant" },
-      { id: 6, name: 'Dinos Kebab House', adr: "Jernbanegata 7, 2821 Gjøvik", txt: "100 % rabatt på alt av mat.", logo: "img/dinos.png", kat: "resturant", url: "dinoshouse.no" },
+      { id: 6, name: 'Dinos Kebab House', adr: "Jernbanegata 7, 2821 Gjøvik", txt: "15 % rabatt på mat og drikke.", logo: "img/dinos.png", kat: "resturant", url: "dinoshouse.no" },
       { id: 7, name: 'Egon Gjøvik', adr: "Jernbanegata 5, 2821 Gjøvik", txt: "På Egon Gjøvik kan studenter få en cheeseburger på 150gr med pommes frities og en medium brus til 163,- (Ordinær pris er 206,-)", logo: "img/egon.jpg", kat: "resturant" },
       { id: 8, name: 'Jako Sushi', adr: "Hunnsvegen 7, 2821 Gjøvik", txt: "10 % på alt av mat og drikke ved henting", logo: "img/jako.png", kat: "resturant" },
       { id: 9, name: 'Smakfullt Fisk og Delikatesser', adr: "Hunnsveien 4B, 2821 Gjøvik", txt: "10 % på alle varer.", logo: "img/jako.png", kat: "resturant" },
@@ -38,7 +41,6 @@ angular.module('starter.services', [])
         return studrab;
     },
     get: function(firmaId) {
-      // Simple index lookup
       return studrab[firmaId];
     }
   }

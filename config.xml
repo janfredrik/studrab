@@ -8,9 +8,6 @@
       Jan Fredrik Gundersen
     </author>
   <content src="index.html"/>
-    <access origin="*" browserOnly="true"/>
-    <gap:plugin name="org.apache.cordova.inappbrowser"/>
-    <gap:plugin name="org.apache.cordova.geolocation"/>
 
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>

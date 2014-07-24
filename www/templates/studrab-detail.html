@@ -1,33 +1,24 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+  Jan Fredrik Gundersen, Skien - 2014
+  Detaljert visning av en bedrift. 
+  - Laster data fra app.js
+  - Henter data fra service.js
 -->
+
 <ion-view title="{{studrab.name}}">
   <ion-content has-header="true" padding="true">
       <div class="list card">
+          <div class="item item-avatar">
+            <img src="{{studrab.logo}}">
+            <h2>{{studrab.name}}</h2>
+            <p>{{studrab.adr}}</p>
+          </div>
 
-  <div class="item item-avatar">
-    <img src="{{studrab.logo}}">
-    <h2>{{studrab.name}}</h2>
-    <p>{{studrab.adr}}</p>
-  </div>
-
-  <div class="item item-body">
-      
-    <p>Fordel: 
-      {{studrab.txt}}
-    </p>
-      
-      <a href="#" onclick="openDeviceBrowser('http://www.{{studrab.url}}/')" class="button button-block button-positive">Link</a>
-      
-    <a onClick='window.open("http://www.{{studrab.url}}/", "_system");' href='http://www.{{studrab.url}}'  class="button button-block button-positive">
-      Besøk nettside
-    </a>
-
-
-  </div>
-
-    </ion-content>
+        <div class="item item-body">
+            <p>Fordel: 
+              {{studrab.txt}}
+            </p>
+        </div>
+    </div>
+  </ion-content>
 </ion-view>
