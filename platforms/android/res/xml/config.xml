@@ -5,15 +5,14 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>studrab2</name>
+    <name>Studentrabatter</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Studentrabatter i Gjøvik
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="janfredrik@hotmail.com" href="http://clap.no/">
+      Jan Fredrik Gundersen
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />

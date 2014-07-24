@@ -15,15 +15,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('InfoCtrl', function($scope, $ionicPopup, $timeout) {  
- $scope.showAlert = function() {
-   var alertPopup = $ionicPopup.alert({
-     title: 'Desverre..',
-     template: 'Vi har for øyeblikket ikke en engelsk versjon. Lyst til å oversette? Kontakt oss!'
-   });
-   alertPopup.then(function(res) {
+ var ant = 0;
+    
+ $scope.byttSpraak = function() {
+   if (ant == 0) {
+     var alertPopup = $ionicPopup.alert({
+       title: 'Sorry..',
+       template: 'Vi har for øyeblikket ikke en engelsk versjon. Lyst til å oversette? Kontakt oss!'
+     });
+     alertPopup.then(function(res) {
      console.log('Vi har for øyeblikket ikke en engelsk versjon.');
-   });
- };
-
+     });
+     ant+=1;
+ }
+};
 
 });
