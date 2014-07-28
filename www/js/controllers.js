@@ -21,7 +21,7 @@ angular.module('starter.controllers', [])
    if (ant == 0) {
      var alertPopup = $ionicPopup.alert({
        title: 'Sorry..',
-       template: 'Vi har for øyeblikket ikke en engelsk versjon. Lyst til å oversette? Kontakt oss!'
+       template: 'Vi har for øyeblikket ikke en engelsk versjon.'
      });
      alertPopup.then(function(res) {
      console.log('Vi har for øyeblikket ikke en engelsk versjon.');
